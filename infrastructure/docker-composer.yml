@@ -1,1 +1,15 @@
 version: '3.8'
+
+services:
+  postgres:
+    image: postgres:14
+    container_name: task-app-postgres
+    environment:
+      POSTGRES_USER: taskapp
+      POSTGRES_PASSWORD: taskapp
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - task-app-network
