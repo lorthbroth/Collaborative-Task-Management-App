@@ -17,3 +17,4 @@
        └───────────►│      Kafka      │◄───────────┘
                     │  Event Streaming│
                     └─────────────────┘
+![alt text](image.png)
